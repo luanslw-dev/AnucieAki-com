@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estiloMenu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="menu.js" defer></script>
+    <title>Carrossel Estilo Netflix com Sinopse e Imagem</title>
+
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.png" alt="Logo Portifoli Luan">
+                </a>
+            </div><!--fechando div logo-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#pesquisar">Pesquisar</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="https://wa.me/5585992278130" title="Enviar mensagen no whatsap"
+                    target="_blank"><button>Contato</button></a>
+            </div><!--btn-contato-->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav class="menu-fixo">
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#pesquisar">Pesquisar</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                       
+                    </ul>
+
+                </nav>
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"> </div>
+        </div><!--interface-->
+    </header>
+<main>
+
+     <section>
+
+        <div class="iterface">
+            <div class="">
+         
+            
+            <!-- Área para mostrar a imagem e a sinopse -->
+            <div class="sinopse" id="sinopse">
+                
+            </div>
+            
+            <div class="carrossel">
+                <div class="textos">
+                    <h1>Supermercado</h1>
+                  </div>
+                <div class="carrossel-imagens">
+        
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    
+           
+                </div>
+                
+                <!-- Botões de navegação -->
+                <button class="prev" onclick="moverCarrossel(-1)">&#10094;</button>
+                <button class="next" onclick="moverCarrossel(1)">&#10095;</button>
+            </div>
+          
+            <div class="carrossel02">
+              <div class="textos">
+                <h1>construção</h1>
+              </div>
+                <div class="carrossel02-imagens">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    
+                </div>
+                
+                <!-- Botões de navegação -->
+                <button class="prev02" onclick="moverCarrossel02(-1)">&#10094;</button>
+                <button class="next02" onclick="moverCarrossel02(1)">&#10095;</button>
+            </div>
+        
+            <script>
+                let indice = 0;
+            
+                function moverCarrossel(direcao) {
+                    const imagens = document.querySelector('.carrossel-imagens');
+                    const totalImagens = document.querySelectorAll('.carrossel-imagens img').length;
+            
+                    indice += direcao;
+            
+                    // Se o índice for menor que 0, volta para a última imagem
+                    if (indice < 0) {
+                        indice = totalImagens - 1;
+                    }
+            
+                    // Se o índice for maior que o total de imagens, vai para a primeira
+                    if (indice >= totalImagens) {
+                        indice = 0;
+                    }
+            
+                    // Move o carrossel para a imagem atual
+                    imagens.style.transform = `translateX(-${indice * 210}px)`; /* 210px considerando margem de 10px */
+                }
+            
+                function mostrarSinopse(imagem, sinopse) {
+                    const sinopseDiv = document.getElementById('sinopse');
+                    
+                    // Atualiza a sinopse
+                    sinopseDiv.innerHTML = `<img src="${imagem}" alt="Imagem do filme"> <span>${sinopse}</span>`;
+                    sinopseDiv.style.display = 'flex'; // Exibe a sinopse junto com a imagem
+                }
+            </script>
+                    <script>
+                        let indice02 = 0;
+                    
+                        function moverCarrossel02(direcao) {
+                            const imagens02 = document.querySelector('.carrossel02-imagens');
+                            const totalImagens02 = document.querySelectorAll('.carrossel02-imagens img').length;
+                    
+                            indice02 += direcao;
+                    
+                            // Se o índice for menor que 0, volta para a última imagem
+                            if (indice02 < 0) {
+                                indice02 = totalImagens02 - 1;
+                            }
+                    
+                            // Se o índice for maior que o total de imagens, vai para a primeira
+                            if (indice02 >= totalImagens02) {
+                                indice02 = 0;
+                            }
+                    
+                            // Move o carrossel para a imagem atual
+                            imagens02.style.transform = `translateX(-${indice02 * 210}px)`; /* 210px considerando margem de 10px */
+                        }
+                    
+                   
+                    </script>
+                   
+            
+            </div>
+        </div>
+     </section>
+     <section class="formulario">
+        <div class="interface">
+            <h2 class="titulo">FALA <span>CONOSCO.</span></h2>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                <input type="email" name="" id="" placeholder="Seu email " required>
+                <input type="text" name="" id="" placeholder="Seu celular">
+                <textarea name="" id="" placeholder="Sua mensagem:"></textarea>
+                <div class="btn-enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div><!--interface-->
+    </section><!--formulario-->
+     <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/logo.png" alt="">
+                    </div><!--logo footer-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/luanslw40?igsh=MTg0ZzdlM3F5dTU2MA=="
+                            title="Ir para o Instagran" target="_blank"><button><i
+                                    class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/in/carlos-gomes-bb8608245" title="Ir para o linkidin-in"
+                            target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://wa.me/5585992278130" title="Enviar mensagen no whatsap"
+                            target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="https://github.com/luanslw-dev" title="Ir para o Github" target="_blank"><button><i
+                                    class="bi bi-github"></i></i></button></a>
+                    </div><!--btn-social-->
+                </div><!--flex-->
+            </div><!--line-footer-->
+            <div class="line-footer border">
+                <p><i class="bi bi-envelope-fill"></i><a href="mailto:luanslw@gmail.com "> luanslw@gmail.com</a></p>
+            </div>
+        </div><!--interface-->
+    </footer>
+</main>
+
+
+
+</body>
+</html>

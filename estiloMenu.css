@@ -1,0 +1,374 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color:rgba(0, 0, 0, 0.781);
+    height: 100vh;
+}
+
+.logo img{
+    width: 200px;
+
+}
+
+.interface{
+
+    max-width: 1280px;
+    margin: 0 auto;
+   
+}
+.flex{
+    display: flex;
+}
+ .btn-contato button{
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:gray;
+    color: #000;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+ h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+ } 
+ h2.titulo span{
+    color:gray;
+ }   
+header button:hover,form .btn-enviar input:hover{
+    box-shadow: 2px 2px 8px #fff;
+    transform: scale(1.05);
+    }
+
+
+/* ESTILO DO CABEÇALHO*/
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+
+header nav.menu-desktop a:hover{
+    color: white;
+    transform: scale(1.3);
+}
+
+header nav  ul{
+    list-style: none;
+
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+/*ESTILO MENU MOBILE*/
+.btn-abrir-menu i{
+    color:#fff;
+    font-size: 40px; 
+    display: none;
+}
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+.menu-mobile.abrir-menu ~.overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #fff;
+    font-size: 30px;
+
+
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+.menu-mobile nav ul{   
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+.menu-mobile nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.overlay-menu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display:none ;
+
+}
+
+
+
+
+
+
+
+
+/*ESTILO O SOBRE*/
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: gray;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+.orverlay:hover{
+    opacity: 1;
+}
+/**ESTILO FORMULARIO DE CONTATO*/
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    padding: 25px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    outline: ;
+}
+
+form input::placeholder{
+    
+}
+form textarea{
+    resize: none;
+    height: 200px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color:gray;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+/*ESTILO DO FOOTER*/
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 20px 0;
+}
+.border{
+    border-top:2px solid gray;
+}
+
+footer .line-footer p i{
+    color: gray;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+/*RESPONSIVEL*/
+@media screen and (max-width:1020px){
+    /*CLASSES GERAIS*/
+    .flex{
+        flex-direction: column;
+    }
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+     } 
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /*CABEÇALHO*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    /*TOPO DO SITE*/
+section.topo-do-site .flex{
+    gap: 40px;
+}
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+    /*ESTILO DAS ESPESIALIDADES*/
+section.especialidades{
+    padding: 10px 8%;
+}
+/*SOBRE*/
+section.sobre{
+    padding: 80px 8%;
+}
+.sobre .txt-sobre h2{
+    font-size: 34px;
+    line-height: 35px;
+    text-align: center;
+}
+.sobre .flex{
+    flex-direction: column-reverse;
+}
+.btn-social{
+    text-align: center;
+}
+.img-sobre img{
+    width: 100%;
+}
+/*PORTIFOLIO*/
+section.portifolio{
+    padding: 80px 8%;
+}
+
+.img-port{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    height: 460px;
+}
+section.portifolio .flex{
+    gap: 60px;
+}
+/*FOOTER*/
+footer .flex{
+    flex-direction: column;
+}
+footer .line-footer{
+    text-align: center;
+}
+
+.btn-abrir-menu i{
+    display: block;
+}
+.sinopse img {
+    width: 150px;
+    height: 200px;
+
+}
+.sinopse{
+    font-size: 15px;
+    align-items:;
+    width: 100%;
+}
+.carrossel-imagens img {
+    width: 150px;
+    height: 200px;
+}
+.carrossel02-imagens img {
+    width: 150px;
+    height: 200px;
+}
+
+}
+
+/* Estilo para o botão de voltar ao topo */
+.back-to-top {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px;    /* Distância do fundo */
+    right: 20px;     /* Distância da borda direita */
+    background-color: #333;  /* Cor de fundo */
+    color: white;    /* Cor do texto */
+    border: none;    /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer;  /* Cursor de mãozinha */
+    border-radius: 5px;  /* Bordas arredondadas */
+    display: none;     /* Inicialmente escondido */
+    opacity: 0.7;
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.back-to-top:hover {
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+}

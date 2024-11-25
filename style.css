@@ -1,0 +1,218 @@
+:root{
+--cor0:;
+}
+
+
+div.textos{
+    background-color: gray;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+margin-bottom: 10px;
+    
+}
+
+div.textos h1{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+ 
+     
+.link_visitar button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: gray;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    color: #fff;
+    margin: 20px;
+
+}
+.link_visitar button{
+    transition: .5s;
+    text-decoration: none;
+}
+.link_visitar button:hover{
+    box-shadow: 2px 2px 8px white;
+    transform: scale(1.3);
+   
+}
+
+
+
+/* Estilo para o botão de voltar ao topo */
+.back-to-top {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px;    /* Distância do fundo */
+    right: 20px;     /* Distância da borda direita */
+    background-color: #333;  /* Cor de fundo */
+    color: white;    /* Cor do texto */
+    border: none;    /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer;  /* Cursor de mãozinha */
+    border-radius: 5px;  /* Bordas arredondadas */
+    display: none;     /* Inicialmente escondido */
+    opacity: 0.7;
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.back-to-top:hover {
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+}
+
+/* Contêiner principal */
+.carrossel {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden; /* Oculta as imagens que estão fora da tela */
+    position: relative;
+}
+
+/* Contêiner das imagens do carrossel */
+.carrossel-imagens {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo das imagens */
+.carrossel-imagens img {
+    width: 200px; /* Tamanho das imagens */
+    height: 300px; /* Altura das imagens */
+    object-fit: cover; /* Garante que a imagem ocupe todo o espaço sem distorcer */
+    margin-right: 10px; /* Espaço entre as imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor para indicar que é clicável */
+}
+
+/* Botões de navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Área da sinopse e imagem */
+.sinopse {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    font-size: 28px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto horizontalmente */
+    justify-content: left;
+    display: ;
+   
+       
+
+}
+
+.sinopse img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+/* Estilo para o botão de voltar ao topo */
+.back-to-top {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px;    /* Distância do fundo */
+    right: 20px;     /* Distância da borda direita */
+    background-color: #333;  /* Cor de fundo */
+    color: white;    /* Cor do texto */
+    border: none;    /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer;  /* Cursor de mãozinha */
+    border-radius: 5px;  /* Bordas arredondadas */
+    display: none;     /* Inicialmente escondido */
+    opacity: 0.7;
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.back-to-top:hover {
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+}
+
+/* Contêiner principal */
+.carrossel02 {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden; /* Oculta as imagens que estão fora da tela */
+    position: relative;
+}
+
+/* Contêiner das imagens do carrossel */
+.carrossel02-imagens {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo das imagens */
+.carrossel02-imagens img {
+    width: 200px; /* Tamanho das imagens */
+    height: 300px; /* Altura das imagens */
+    object-fit: cover; /* Garante que a imagem ocupe todo o espaço sem distorcer */
+    margin-right: 10px; /* Espaço entre as imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor para indicar que é clicável */
+}
+
+/* Botões de navegação */
+.prev02, .next02 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev02 {
+    left: 0;
+}
+
+.next02 {
+    right: 0;
+}
+
+
+
+
+
+
