@@ -373,6 +373,14 @@ footer .line-footer{
     align-items:;
     width: 100%;
 }
+.projetos .flexivel{
+    flex-direction: column;
+    margin: auto;
+}
+    .projeto.ativo{
+       margin:20px auto;
+       padding: ;
+    }
 
 
 }
