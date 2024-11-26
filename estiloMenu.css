@@ -359,6 +359,21 @@ footer .line-footer{
     align-items:;
     width: 100%;
 }
+.carrossel03-imagens img {
+    width: 150px;
+    height: 200px;
+}
+.sinopse03 img {
+    width: 150px;
+    height: 200px;
+
+}
+.sinopse03{
+    font-size: 15px;
+    align-items:;
+    width: 100%;
+}
+
 
 }
 

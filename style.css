@@ -219,6 +219,75 @@ div.textos h1{
 }
 
 
+/* Contêiner principal */
+.carrossel03 {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden; /* Oculta as imagens que estão fora da tela */
+    position: relative;
+}
 
+/* Contêiner das imagens do carrossel */
+.carrossel03-imagens {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Estilo das imagens */
+.carrossel03-imagens img {
+    width: 200px; /* Tamanho das imagens */
+    height: 300px; /* Altura das imagens */
+    object-fit: cover; /* Garante que a imagem ocupe todo o espaço sem distorcer */
+    margin-right: 10px; /* Espaço entre as imagens */
+    border-radius: 10px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor para indicar que é clicável */
+}
+
+/* Botões de navegação */
+.prev03, .next03 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev03 {
+    left: 0;
+}
+
+.next03 {
+    right: 0;
+}
+
+
+.sinopse03 {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    font-size: 28px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto horizontalmente */
+    justify-content: left;
+    display: ;
+   
+       
+
+}
+
+.sinopse03 img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+}
 
 

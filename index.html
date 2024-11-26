@@ -108,7 +108,30 @@
                 <button class="prev02" onclick="moverCarrossel02(-1)">&#10094;</button>
                 <button class="next02" onclick="moverCarrossel02(1)">&#10095;</button>
             </div>
-        
+            <div class="sinopse03" id="sinopse03">
+                
+            </div>
+          
+            <div class="carrossel03">
+              <div class="textos">
+                <h1>Farmacias</h1>
+              </div>
+                <div class="carrossel03-imagens">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse03(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse03(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse03(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse03(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse03(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse03(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse03(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    <img src="sua logo.png" alt="Filme 9" onclick="mostrarSinopse03(src='sua logo.png', '<h1>Super Compra aki</h1><p>Somos uam rede desupermecados prontos para atendelos veenha nos visitar:</p> Um emocionante thriller de ação. <div class=link_visitar><a href=#></a><button>Visitar</button></div>')">
+                    </div>
+            
+                
+                <!-- Botões de navegação -->
+                <button class="prev02" onclick="moverCarrossel03(-1)">&#10094;</button>
+                <button class="next02" onclick="moverCarrossel03(1)">&#10095;</button>
+            </div>
             <script>
                 let indice = 0;
             
@@ -174,7 +197,41 @@
                         
                    
                     </script>
-                   
+  </script>
+  <script>
+      let indice03 = 0;
+  
+      function moverCarrossel03(direcao) {
+          const imagens03 = document.querySelector('.carrossel03-imagens');
+          const totalImagens03 = document.querySelectorAll('.carrossel03-imagens img').length;
+  
+          indice03 += direcao;
+  
+          // Se o índice for menor que 0, volta para a última imagem
+          if (indice03 < 0) {
+              indice02 = totalImagens02 - 1;
+          }
+  
+          // Se o índice for maior que o total de imagens, vai para a primeira
+          if (indice03 >= totalImagens03) {
+              indice03 = 0;
+          }
+   
+          // Move o carrossel para a imagem atual
+          imagens03.style.transform = `translateX(-${indice03 * 210}px)`; /* 210px considerando margem de 10px */
+
+      }
+          function mostrarSinopse03(imagem, sinopse) {
+  const sinopseDiv = document.getElementById('sinopse03');
+  
+  // Atualiza a sinopse
+  sinopseDiv.innerHTML = `<img src="${imagem}" alt="Imagem do filme"> <span>${sinopse}</span>`;
+  sinopseDiv.style.display = 'flex'; // Exibe a sinopse junto com a imagem
+
+      }
+      
+ 
+  </script>
             
             </div>
         </div>
