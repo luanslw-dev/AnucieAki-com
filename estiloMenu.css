@@ -381,7 +381,12 @@ footer .line-footer{
        margin:20px auto;
        padding: ;
     }
-
+    .parceiros{
+        padding: 10px 0;
+    }
+    .parceiros h1{
+        font-size: 20px;
+    }
 
 }
 

@@ -293,9 +293,9 @@ div.textos h1{
 
 /*FORMATAÇÃO PARCEIROS*/
 .parceiros{
-    background-color: aqua;
-    width: 500px;
-    padding: 10px;
+    background-color: gray;
+    width: 300px;
+    padding: 10px 0;
     border-radius: 20px;
     box-shadow: 0 0 5px 5px #fff;
     margin: auto;
@@ -317,10 +317,11 @@ div.textos h1{
 
 
 .projetos .projeto {
-    border: 2px solid #fff;
+   border-radius: 10px 10px 0 10px;
     width: 200px;
     height: 200px;
-    background-color: red;
+   
+    box-shadow: 2px 2px 5px 5px #ffffff65;
      display: none;
     position: relative;
   
@@ -331,13 +332,13 @@ div.textos h1{
 }
 
 .parceiro-conteudo{
-    border: 2px solid #fff;
+    border: 1px solid #ffffff00;
     width: 180px;
     height: 40px;
     justify-content: center;
     margin: auto;
     border-radius: 20px;
-    background-color: rgba(51, 48, 42, 0.842);
+
 
     
 }
