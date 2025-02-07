@@ -374,7 +374,7 @@ footer .line-footer{
     width: 100%;
 }
 .projetos .flexivel{
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas de igual largura */
     margin: auto;
 }
     .projeto.ativo{

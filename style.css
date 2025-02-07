@@ -310,9 +310,13 @@ div.textos h1{
 }
 
 .flexivel{
-    display: flex;
+   /* display: flex;
     justify-content: space-around;
-    margin: 20px auto;
+    margin: 20px auto;*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 colunas de igual largura */
+    /* Espaçamento entre os itens */
+
 }
 
 
