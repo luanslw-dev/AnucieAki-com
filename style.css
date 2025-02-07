@@ -324,7 +324,7 @@ div.textos h1{
    border-radius: 10px 10px 0 10px;
     width: 180px;
     height: 100%;
-   
+   background-color: ;
     box-shadow: 2px 2px 5px 5px #ffffff65;
      display: none;
     position: relative;
@@ -358,7 +358,7 @@ div.textos h1{
    font-size: 20px;
    color: #fff;
    text-transform: uppercase;
-   margin: 7px;
+   margin: ;
 }
 
 /*BUTAO MOSTRAR MAIS*/
