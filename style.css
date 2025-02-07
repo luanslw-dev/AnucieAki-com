@@ -314,16 +314,16 @@ div.textos h1{
     justify-content: space-around;
     margin: 20px auto;*/
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 colunas de igual largura */
-    /* Espaçamento entre os itens */
+    grid-template-columns: repeat(4, 1fr); /* 3 colunas de igual largura */
+    grid-gap: 10px; /* Espaçamento entre os itens */
 
 }
 
 
 .projetos .projeto {
    border-radius: 10px 10px 0 10px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 100%;
    
     box-shadow: 2px 2px 5px 5px #ffffff65;
      display: none;
